@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMeme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://static.toiimg.com/photo/34967827.cms" type="image/x-icon">
+</head>
+
+<body>
+    <input class="swag" type="button" onclick="location.href='http://localhost:8081/swagger-ui/';" value="SwaggerUI" />
+    <h1 class="text">XMeme</h1>
+    <div class="form">
+        <!-- Form for posting a meme -->
+        <form action="">
+            <label class="name" for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label class="name" for="caption">Caption</label>
+            <input type="text" name="caption" id="caption">
+            <label class="name" for="url">URL</label>
+            <div class="row">
+                <div><input type="text" name="url" id="url"></div>
+                <div style="display:inline-block;"><button class="contact">Submit Meme</button></div>
+        </form>
+        <hr class="style-five">
+        </div>
+
+        <!-- Div section for loading all the memes from backend server using JS script -->
+        <div id="individual">
+        </div>
+        <script src="js/client.js"></script>
+
+</body>
+
+</html>
